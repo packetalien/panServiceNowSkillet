@@ -44,7 +44,7 @@ variables:
     default: admin
     type_hint: text
   - name: password
-    description: Enter your Service Now web services password. Note, this is only used when sent to the NGFW, and should not be stored.
+    description: Enter your Service Now web services password. WARNING-This password may be cached. This is a side effect of PanHandler. Make sure this is a Web Services only account.
     default: admin
     type_hint: text
 
