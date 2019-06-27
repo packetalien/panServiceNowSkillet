@@ -1,5 +1,5 @@
 # Service Now Server Profile Skillet
-First Skillet
+Simple Skillet for adding a HTTP Incident Logger to PanOS. First version.
 
 #### Purpose of this Skillet:
 Skillet can be used to both Demo creation of a Service Now HTTPS Logging Server Profile and or operational creation of said profile.
