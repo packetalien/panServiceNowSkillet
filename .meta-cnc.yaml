@@ -58,6 +58,6 @@ variables:
 snippets:
   - name: servicenowsece
     xpath: /config/shared/log-settings/http/entry[@name='{{profile_name}}']
-    file: servicenowsece
+    file: servicenow.xml
 # ---------------------------------------------------------------------
 # end of snippets section
