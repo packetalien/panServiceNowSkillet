@@ -57,7 +57,7 @@ variables:
 # files will load in the order listed
 snippets:
   - name: servicenowsece
-    xpath: /config/shared/log-settings/http/entry[@name='{{profile_name}}']
+    xpath: /config/shared/log-settings/http/entry
     file: servicenow.xml
 # ---------------------------------------------------------------------
 # end of snippets section
