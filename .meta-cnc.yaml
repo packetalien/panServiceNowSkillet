@@ -16,7 +16,7 @@ extends:
 # grouping of like snippets for dynamic menu creation in panhandler
 labels:
   collection:
-    - Lab in a Box
+    - LabinaBox
 
 # ---------------------------------------------------------------------
 # end of preamble section
