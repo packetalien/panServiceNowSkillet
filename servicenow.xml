@@ -3,7 +3,7 @@
       <address>{{ url }}</address>
         <http-method>POST</http-method>
         <protocol>HTTPS</protocol>
-        <password>-{{ password }}</password>
+        <password>{{ password }}</password>
         <tls-version>1.2</tls-version>
         <port>443</port>
         <certificate-profile>None</certificate-profile>
