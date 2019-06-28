@@ -59,8 +59,8 @@ snippets:
   - name: servicenow
     xpath: /config/shared/log-settings/http/entry[@name='{{ profile_name }}']
     file: servicenow.xml
-  #- name: payload
-  #  xpath: /config/shared/log-settings/http/entry[@name='{{ profile_name }}']
-  #  file: sni.xml
+  - name: payload
+    xpath: /config/shared/log-settings/http/entry[@name='{{ profile_name }}']/format/threat
+    file: sni.xml
 # ---------------------------------------------------------------------
 # end of snippets section
