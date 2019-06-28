@@ -1,4 +1,3 @@
-<entry name="{{ profile_name }}">
   <server>
     <entry name="{{ profile_name }}">
       <address>{{ url }}</address>
@@ -11,4 +10,3 @@
         <username>{{ user_name }}</username>
     </entry>
   </server>
-</entry>
