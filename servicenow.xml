@@ -10,7 +10,6 @@
       <username>{{ user_name }}</username>
     </entry>
   </server>
-  <tag-registration>no</tag-registration>
   <format>
     <threat>
       <headers>
