@@ -65,10 +65,10 @@ variables:
 # snippets used for api configuration including xpath and element as file name
 # files will load in the order listed
 snippets:
-  - name: servicenowsece
+  - name: {{profile_name}}
     xpath: /config/shared/log-settings/http
     file: servicenow.xml
-  - name: {{payload}}
+  - name: IncidentPayload
     xpath: /config/shared/log-settings/http/entry[@name='{{profile_name}}']
     file: {{payload}}
 # ---------------------------------------------------------------------
