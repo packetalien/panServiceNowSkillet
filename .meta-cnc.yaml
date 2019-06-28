@@ -1,9 +1,9 @@
 # skillet preamble information used by panhandler
 # ---------------------------------------------------------------------
 # unique snippet name
-name: panServiceNow
+name: ServiceNowSkillet
 # label used for menu selection
-label: panhandler-ServiceNow
+label: ServiceNowSkillet
 description: Adds ServiceNow HTTP Provider to PanOS.
 
 # type of device configuration
