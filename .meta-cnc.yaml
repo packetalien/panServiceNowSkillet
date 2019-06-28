@@ -53,9 +53,9 @@ variables:
     type_hint: dropdown
     dd_list:
       - key: ServiceNow Incident
-        value: sni
+        value: sni.xml
       - key: ServiceNow Security Incident
-        value: snsi
+        value: snsi.xml
 
 # ---------------------------------------------------------------------
 # end of variables section
@@ -70,6 +70,6 @@ snippets:
     file: servicenow.xml
   - name: {{payload}}
     xpath: /config/shared/log-settings/http/entry[@name='{{profile_name}}']
-    file: {{payload}}.xml
+    file: {{payload}}
 # ---------------------------------------------------------------------
 # end of snippets section
