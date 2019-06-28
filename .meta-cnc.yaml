@@ -70,6 +70,6 @@ snippets:
     file: servicenow.xml
   - name: Payload
     xpath: /config/shared/log-settings/http/entry[@name='{{profile_name}}']
-    file: {{payload}}
+    file: '{{payload}}'
 # ---------------------------------------------------------------------
 # end of snippets section
