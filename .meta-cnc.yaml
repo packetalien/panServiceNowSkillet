@@ -47,6 +47,15 @@ variables:
     description: Enter your Service Now web services password. WARNING-This password may be cached. This is a side effect of PanHandler. Make sure this is a Web Services only account.
     default: admin
     type_hint: text
+  - name: payload
+    description: Choose between the two pre-defined ServiceNow Payload Types
+    default: ServiceNow Incident
+    type_hint: dropdown
+    dd_list:
+      - key: ServiceNow Incident
+        value: sni
+      - key: ServiceNow Security Incident
+        value: snsi
 
 # ---------------------------------------------------------------------
 # end of variables section
@@ -59,5 +68,8 @@ snippets:
   - name: servicenowsece
     xpath: /config/shared/log-settings/http
     file: servicenow.xml
+  - name: {{payload}}
+    xpath: /config/shared/log-settings/http/entry[@name='{{profile_name}}']
+    file: {{payload}}.xml
 # ---------------------------------------------------------------------
 # end of snippets section
