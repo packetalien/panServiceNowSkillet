@@ -28,12 +28,12 @@ labels:
 # type_hints can be text, ip_address, or dropdown
 variables:
   - name: profile_name
-    description: Name of Serivce Profile
+    description: Name of Service Profile
     default: ServiceNowServerProfile
     type_hint: text
   - name: server_name
-    description: Enter a Server name for your Service Now Instance. For SE, check loop page for demo instance.
-    default: enter ServiceNow instance here
+    description: Enter a Server name for your Service Now Instance. This is the name in the HTTP Servers section.
+    default: enter ServiceNow server name here
     type_hint: text
   - name: url
     description: ServiceNow instance URL (without https://, example servicenow.servicenow.com)
