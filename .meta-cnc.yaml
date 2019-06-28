@@ -1,10 +1,10 @@
 # skillet preamble information used by panhandler
 # ---------------------------------------------------------------------
 # unique snippet name
-name: ServiceNowSkillet
+name: ServiceNowIncidentSkillet
 # label used for menu selection
-label: ServiceNowSkillet
-description: Adds ServiceNow HTTP Provider to PanOS.
+label: ServiceNowIncidentSkillet
+description: Adds ServiceNow HTTP Provider to PanOS of the Security Incident payload type.
 
 # type of device configuration
 # common types are panorama, panos, and template
@@ -47,15 +47,6 @@ variables:
     description: Enter your Service Now web services password. WARNING-This password may be cached. This is a side effect of PanHandler. Make sure this is a Web Services only account.
     default: admin
     type_hint: text
-  - name: payload
-    description: Choose one of the two pre-defined ServiceNow payloads
-    default: ServiceNow Incident
-    type_hint: dropdown
-    dd_list:
-      - key: ServiceNow Incident
-        value: sni.xml
-      - key: ServiceNow Security Incident
-        value: snsi.xml
 
 # ---------------------------------------------------------------------
 # end of variables section
@@ -70,6 +61,6 @@ snippets:
     file: servicenow.xml
   - name: Payload
     xpath: /config/shared/log-settings/http/entry[@name='{{profile_name}}']
-    file: '{{payload}}'
+    file: sni.xml
 # ---------------------------------------------------------------------
 # end of snippets section
