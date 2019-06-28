@@ -1,7 +1,6 @@
   <server>
     <entry name="{{ server_name }}">
       <address>{{ url }}</address>
-      <address>{{ url }}</address>
       <http-method>POST</http-method>
       <protocol>HTTPS</protocol>
       <password>-{{ password }}</password>
