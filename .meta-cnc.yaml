@@ -59,7 +59,7 @@ snippets:
   - name: servicenow
     xpath: /config/shared/log-settings/http
     file: servicenow.xml
-  - name: Payload
+  - name: payload
     xpath: /config/shared/log-settings/http/entry[@name='{{profile_name}}']/format
     file: sni.xml
 # ---------------------------------------------------------------------
