@@ -57,10 +57,11 @@ variables:
 # files will load in the order listed
 snippets:
   - name: servicenow
-    xpath: /config/shared/log-settings/http
+    xpath: /config/shared/log-settings/http/entry[@name='{{profile_name}}']
     file: servicenow.xml
-  - name: payload
-    xpath: /config/shared/log-settings/http/entry[@name='{{profile_name}}']/format
-    file: sni.xml
+# May not be needed.
+#  - name: payload
+#    xpath: /config/shared/log-settings/http/entry[@name='{{profile_name}}']/format
+#    file: sni.xml
 # ---------------------------------------------------------------------
 # end of snippets section
