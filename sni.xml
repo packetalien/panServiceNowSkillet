@@ -5,4 +5,3 @@
     </headers>
     <name>ServiceNow Incident</name>
     <url-format>/api/now/table/incident</url-format>
-    <payload>Test</payload>
