@@ -7,12 +7,11 @@ Skillet can be used to both Demo creation of a Service Now HTTPS Logging
 Server Profile and or operational creation of said profile.
 
 #### Usage
-This skillet is designed to implement one of two pre-defined payloads in PanOS. 
-A Panorama version is in development. Select from the pull down menu in 
-the skillet for one of the two pre-defined payloads.
+This skillet is designed to implement an HTTP logger that sends messages to
+a ServiceNow instance. It currently configures everything except the
+pre-defined payload itself, an issue with that is being researched. Once
+the object is created, you will need to select the pre-defined format.
 
-There are no trigger actions in this skillet, those should be customized to
-your specific environment.
 
 Please see the [PanOS Admin Guide](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-admin.html) for more details.
 
